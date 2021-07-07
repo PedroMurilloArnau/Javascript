@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Incio JavaScript</title>
+    </head>
+    <!--Este va a ser nuestro primer Script asi que vamos a ver como funciona-->
+    <body>
+        <h1>Que podemos hacer con JavaScript</h1>
+        <p id="demo"> JavaScript puede cambiar el contenido del HTML.</p>
+
+        <!--Utilizamos un metodo getElement y innerHTML para cambiar el documento html-->
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript"'>Click Me!</button>
+
+        <!--JavasCrpit tb puede cambiar los atributos del HTML-->
+        <h2>Cambio de atributo de JavasCript</h2>
+        <p>A continuacion podemos ver como cambia las propiedades de nuestro java con la siguentes imagenes</p>
+
+        <button type="button" onclick='document.getElementById("myImage").src="img/bombillaencencida.gif"'>Enciende la bombilla</button>
+
+        <img id="myImage" src="img/bombilla.gif" style="width: 100px">
+
+        <button type="button" onclick='document.getElementById("myImage").src="img/bombilla.gif"'>Apaga la bombilla</button>
+
+        <h2>Con JavasCript se puede cambiar el estilo</h2>
+
+        <h1>Cambiendo el estilo del texto</h1>
+        <p id="texto1">Este el fantasticoso texto al que vamo a cambiar el tamaño del texto</p>
+        <br/>
+        <!--Podemos ver llamando directamente al estilo de un id determinado podemos modificarlo facilmente.-->
+        <button type="button" onclick='document.getElementById("texto1").style.fontSize="100px"'>Cambia el tamaño del texto</button>
+        <button type="button" onclick='document.getElementById("texto1").style.fontSize="20px"'>Cambiar el texto a tamaño pequeño</button>
+        
+        <h2>JavasCript nos da la posibilidad de ocultar el texto</h2>
+
+        <p id="texto2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti consequatur repudiandae debitis dignissimos sunt, adipisci ducimus dolor atque officiis et provident neque dolore nesciunt natus repellendus ipsa eos facilis illo.</p>        
+        <button type="button" onclick='document.getElementById("texto2").style.display="none"'>eliminar el pesado Lorem.</button>
+
+        <h1>JavasCript pude mostrarnos texto que teniamos oculto</h1>
+
+        <p>Debajo tenemos un texto que se encuantra oculto</p>
+        <p id="oculto" style="display:none">Este texto estaba oculto, GRACIAS POR HACERME APARECER!</p>
+        <button type="button" onclick='document.getElementById("oculto").style.display="block"'>Aparce pesao!</button>
+        <button type="button" onclick='document.getElementById("oculto").style.display="none"'>Desaparece pesao!</button>
+    </body>
+</html>
