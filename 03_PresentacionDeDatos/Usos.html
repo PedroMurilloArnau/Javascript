@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+        <title>Presentacion de informacion</title>
+    </head>
+    <body>
+        <h1>Vamos a ver como se presenta la info de Javascript</h1>
+        <!--Veremos que existen 4 formas diferentes de presentar la informacion.-->
+        <br/>
+
+        <h2>innerHTML Escribimos en el HTML</h2>
+        <button type="button" onclick="myFunction()">texto a modificar</button>
+        <br/>
+        <p id="prueba">Este es un texto que vamos a modificar y esta dentro de nuestro html.</p>
+        <br/>
+        <P>Generamos el resultado de 6+6</P>
+        <p id="demo"></p>
+        <br/>
+
+        <h2>document.write() Testeo</h2>
+        <p>Se utiliza para testear.</p>
+        <script>
+          document.write("Este texto es un prueba");
+        </script>
+        <br/>
+
+        <h2>window.alert() Ventana de alerta</h2>
+        <p>Nos presenta una ventana emergente</p>
+        <!--Al generarla no podremos salir automaticamente de la ventana emergente-->
+        <button type="button" onclick="myAlerta()">Atentos que salta una alerta!</button>
+        <br/>
+
+        <h2>console.log() Para realizar arrancar en debug y ver pruebas</h2>
+        <p>Si clickeamos "F12" y nos vamos a la consola podemos ver como funciona.</p>
+        <p>Luego cargamos la página dando "F5".</p>
+        <p>Podemos ver como en la consolo aparece el mensaje</p>
+        <br/>
+
+        <h2>window.print() Imprimimos la pagina</h2>
+        <p>Imprimimos la página que estamos viendo</p>
+        <!--Incrustramos el metodo imprimir en la funcion del boton.-->
+        <button type="button" onclick="window.print()">Pulsa para imprimir</button>
+        
+        <script>
+            function myFunction(){
+            document.getElementById("prueba").innerHTML="Texto modificado.";
+            }
+        </script>
+        <script>
+            document.getElementById("demo").innerHTML=6+6;
+        </script>
+        <script>
+            function myAlerta(){
+            //Este es un comentario de la funcion.
+            window.alert("Esta es la fantastica alerta que hemos generados");
+            }
+        </script>
+        <script>
+            console.log("Hola consola");
+        </script>
+    
+ 
+        
+        
+
+    </body>
+
+</html>

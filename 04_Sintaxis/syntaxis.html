@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba Sintaxis</title>
+   
+    </head>
+    <body>
+        <h1>Inicio de la sintaxis</h1>
+        <br/>
+        <p>A continuacion vamos a ver como funciona la sintaxis en JavasCript</p>
+        <br/>
+        <h2>Palabras reservadas</h2>
+        <ol>
+            <li> var        -- Declaramos una variable.</li>
+            <li> let        -- Declaramos un bloque de variable.</li>
+            <li> const      -- Declaramos una constante.</li>
+            <li> if         -- ejecutamos bajo una condicion.</li>
+            <li> switch     -- ejecutaremos bajo unos determinados casos.</li>
+            <li> for        -- ejecutaremos en loop.</li>
+            <li> function   -- declaramos una funcion.</li>
+            <li> return     -- devolvemos el valor de la funcion.</li>
+            <li> try        -- controlamos el manejo de errores en un bloque de codigo.</li>
+        </ol>
+        <br/>
+        
+        <h2>Variables y Constantes</h2>
+        <P>Se definen de una fora específica.</P>
+        <h3>Estas son constantes</h3>
+        <P id="constante"></P>
+        <p id="fin"></p>
+        <br/>
+        <h3>Estas son variables</h3>
+        <p id="co1"></p>
+        <p>Los operadores pueden ser de tipo ( * / - + ).</p>
+        <br/>
+        <p>Con "let" y "var" declaramos las variables.</p>
+        <p id="co2"></p>
+        <p id="co3"></p>
+        <h2>Comentarios</h2>
+        <p>Los comentarios vienend definidos por // o por /* ... */</p>
+        <p>Nos sirven para definir un comentario o para hacer</p>
+        <p>que una parte del codigo no se ejecute.</p>
+        <script>
+            document.getElementById("constante").innerHTML = 
+            "Esta es una constante";
+        </script>
+        <script>
+            document.getElementById("fin").innerHTML = 45.56;
+        </script>
+        <script>
+            let x;
+            x = 15;
+            document.getElementById("co1").innerHTML =x; 
+        </script>
+        <script>
+            let r,s;
+            r = 5 + 5;
+            s = r * 10;
+            document.getElementById("co2").innerHTML = s;
+        </script>
+        <script>
+            /*Este es una parte de codigo que tenemos presente
+            Es demasiado largo y por eso lo ponemos asi*/
+            var g,h;
+            g = 5 + 5;
+            h = g * 10;
+            document.getElementById("co3").innerHTML = h;
+        </script>
+        <!--Este seria un codigo que no se ejecuta-->
+        <script>
+            //document.getElementById("fin").innerHTML = 46;
+        </script>
+
+       
+    
+        
+        
+    </body>
