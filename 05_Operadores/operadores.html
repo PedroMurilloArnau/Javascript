@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <title>Operadores de JavasCript</title>
+</head>
+<body>
+    <h1>Operadors de JavasCript</h1>
+    <meta charset="utf-8">
+    <br/>
+    <h3>Asigunado el valor de una variable</h3>
+    <p>Podemos ver que asignamos el valor de un variable mediante el operador "="</p>
+    <p id="ejm1"></p>
+    <br/>
+    <p>Los operadores arimenticos son los siguientes: </p>
+    <ol>
+        <li>"+"     --  Suma.</li>
+        <li>"*"     --  Mulitiplica.</li>
+        <li>"-"     --  Resta.</li>
+        <li>"/"     --  Division.</li>
+        <li>"**"    --  Exponente.</li>
+        <li>"%"     --  Modulo.</li>
+        <li>"++"    --  Incrementacion.</li>
+        <li>"--"    --  Decrementacion.</li>
+    </ol>
+    <p>Los operadores de asignacion son los siguientes:</p>
+    <ol>
+        <li>"="     --  Igual a.</li>
+        <li>"+="    --  Igual mas la suma de algo.</li>
+        <li>"-="    --  Igual menos la resta de algo.</li>
+        <li>"/="    --  Igual dividido entre algo.</li>
+        <li>"**="   --  Igual exponente de algo.</li>
+        <li>"%="    --  Igual modulo de algo.</li>
+    </ol>
+    <p>Los operadores de comparacion:</p>
+    <ol>
+        <li>"=="   --  Igual que.</li>
+        <li>"==="  --  Igual valor y tipo que.</li>
+        <li>"!="   --  Distinto que.</li>
+        <li>"!=="  --  Ditinto valor y tipo que.</li>
+        <li>">"    --  Mayor que.</li>
+        <li>"<"    --  Menor que.</li>
+        <li>">="   --  Meyor o igual que.</li>
+        <li>"<="   --  Menor o igual que.</li>
+        <li>"?"    --  Operador ternario.</li>
+    </ol>
+    <p>Los operadores logicos:</p>
+    <ol>
+        <li>"&&"    --  and logico.</li>
+        <li>"||"    --  or logico.</li>
+        <li>"!"     --  no.</li>
+    </ol>
+    <p>Los tipos de operadores:</p>
+    <ol>
+        <li>"typeof"        --  Devuelve el tipo de variable.</li>
+        <li>"instanceof"    --  Devuelve "true" si un objeto es una instancia
+            de un tipo de objeto.
+        </li>
+    </ol>
+    <button type="button" onclick="myAlert()">Ojo con el resto de 15 entre 9 !</button>
+    <script>
+        let x = 7;
+        let y = 9;
+        let z = x + y;
+        document.getElementById("ejm1").innerHTML = z;
+    </script>
+    <script>
+        function myAlert(){
+        window.alert(15%9);
+        }
+    </script>
+</body>
+</html>

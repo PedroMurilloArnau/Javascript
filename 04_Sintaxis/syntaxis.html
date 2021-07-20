@@ -70,9 +70,87 @@
         <script>
             //document.getElementById("fin").innerHTML = 46;
         </script>
+        <h3>Variable "let"</h3>
+        <p>A continuacion vamos a ver como funciona la
+            variable "let" en JavasCript.
+        </p>
+        <p>La variable "let" tiene las siguientes caracteristicas:</p>
+        <ol>
+            <li>Las variables definidas como "let" no se pueden volver a declarar.</li>
+            <li>Debes de declararla antes de usarla.</li>
+            <li>Las variables definidas como "let" tienen un alcance de bloque.</li>
 
-       
-    
-        
+        </ol>
+        <p id="forus"></p>
+        <p id="tordo"></p>
+        <br/> 
+        <script>
+            let l = "Super Mario";
+            let l = 5;
+            /*Vemos que con la variable let si la redefinimos por error, nos da un error
+            por lo que hace que no funcione*/
+            document.getElementById("forus").innerHTML = l;
+        </script>
+        <script>
+            let l = "Super Wario";
+            {
+            let l = 5;
+            /*En este caso tenemos la variable let funcionando en un bloque por lo que
+            esta solo quedara redefinidad para este mismo bloque.*/
+            }
+            document.getElementById("tordo").innerHTML = l;
+        </script>
+        <h3>Variable "var"</h3>
+        <p>Vamos a ver las diferentes características de la variable "var":</p>
+        <ol>
+            <li>Las variables "var" se pueden redefinir.</li>
+            <li>Las variables "var" se pueden declararlas despues de definirlas.</li>
+        </ol>
+        <p>Un ejemplo de variable "var" es el siguiente :</p>
+        <p id= "marca"></p>
+        <p>En el siguiente caso veremos el error que aparece haciendo lo mismo
+            con "let":
+        </p>
+        <p id= "forz"></p>
+        <br/>
+        <script>
+            marcaCoche = "Supra";
+            document.getElementById("marca").innerHTML = marcaCoche;
+            var marcaCoche;
+        </script>
+        <script>
+            // Con la funcion try, catch podemos ver los errores que aparecen.
+            try{
+                marcaCoche = "Ford";
+                let marcaCoche = "Mazda";
+            }
+            catch(err){
+                document.getElementById("forz").innerHTML = err;
+            }
+            /* Podemos ver que en el caso de las variables tipo "let" no posee
+            la misma característica de poder ser definida tras ser declarada.*/
+        </script>
+        <h3>Constantes</h3>
+        <p>Las constantes tienen las siguientes características:</p>
+        <ol>
+            <li>Las constantes no pueden ser redeclaradas.</li>
+            <li>Las constantes no puenden ser redefinidas.</li>
+            <li>Las constantes tienen un alcance de bloque.</li>
+        </ol>
+        <p>Podemos ver que las constantes no puden ser redefinidas:</p>
+        <p id="redef"></p>
+        <p>Las constantes se tienen que asignar:</p>
+        <p>const PI = 3.141592653589793</p>
+        <script>
+            try{
+            const PI = 3.141592653589793;
+            PI = 3.1416
+            PI = PI + 3.1416
+            }
+            catch(err){
+                document.getElementById("redef").innerHTML = err;
+            }
+        </script>
         
     </body>
+</html>
