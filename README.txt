@@ -1,1 +1,3 @@
-Este es el curso para hacer cosas con Javascript
+# INTRO
+
+Este es el **curso** para hacer cosas con Javascript
