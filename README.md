@@ -14,4 +14,10 @@ Este curso trata de abarcar la mayor parte del conocimiento generado para el len
 
     Informacion extraida de:
     [5 tendencias](https://es.linkedin.com/pulse/5-tendencias-en-dise%C3%B1o-web-que-dominar%C3%A1n-el-2024-prepara-joel-benitez-5fb6f)
+
+## 8 BUENAS PRACTICAS ##
+
+Las **buenas practicas** dentro del lenguaje de JavaScript enbloba todos los ámbitos de dicho lenguaje.
+
+1. A la hora de escribir operadores
     
