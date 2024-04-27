@@ -8,6 +8,7 @@
     <title>Repaso</title>
 </head>
 <body>
+    <h3>REPASO html</h3>
     <p>Esta es una breve introduccion con un repaso de lo aprendido 
         hasto ahora en html:</p>
 
@@ -19,6 +20,68 @@
         <li>Gradientes visuales</li>
         <li>Tipografía dominante</li>
     </ol>
-    
+    <h3>REPASO datos</h3>
+    <p>Los datos es algo fundamental y trabajar con ellos de forma correcta es
+        fundamental, ya que de ellos depende muchas veces el buen funcionamento
+        de lo que queramos programar
+    </p>
+    <table>
+        <tr>
+            <th>Tipo de dato</th>
+            <th>Explicacion</th>
+            <th>Ejempo</th>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>Se escriben entrecomilladas</td>
+            <td>"Hola mundo"</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>Decimales o no</td>
+            <td>10.5</td>
+        </tr>
+        <tr>
+            <td>BigInt</td>
+            <td>Guardan numeros demasiado grandes</td>
+            <td>BigInt("654484646456454454621654317521336")</td>
+        </tr>
+        <tr>
+            <td>Booleans</td>
+            <td>Puede ser dos valores. O "true" o "false"</td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>Arrays</td>
+            <td>Almacena listas de datos</td>
+            <td>const animales = ["Gato","Perro","Cisne","Ganso"]</td>
+        </tr>
+        <tr>
+            <td>Objects</td>
+            <td>Podemos almacenar objetos</td>
+            <td>const persona = {nombre:"Pedro",apellido:"Murillo",edad:30}</td>
+        </tr>
+        <tr>
+            <td>Undefined</td>
+            <td>Una variable con un valor no definido</td>
+            <td>let altura; arrojaria "undefined"</td>
+        </tr>
+        <tr>
+            <td>Empty Values</td>
+            <td>Es un string vacio</td>
+            <td>const nombre=""; Arroja un valor vacio de tipo string</td>
+        </tr>
+    </table>
+    <p>Para conocer el tipo de valor que obctenemos podemos utilizar typeof</p>
+    <div class = "infoDeclare">
+        <p onclick = "typeVar(3)">Tipo de variable de const x = "Casa";</p>
+        <p id = "tipeVari"></p>
+    </div>
+    <p>Ojo Los numeros largos y muy pequeños se pueden escribir con decimales</p>
+    <div class="infoDeclare">
+        <p>let x = 56e10</p>
+        <p>let y = 123e-2</p>
+    </div>
+    <p>Los datos de tipo number tienen una tamaño maximo de 64-bit</p>    
 </body>
 </html>
