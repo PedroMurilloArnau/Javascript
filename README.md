@@ -2,6 +2,8 @@
 
 Este curso trata de abarcar la mayor parte del conocimiento generado para el lenguaje de javascript, así como implementación adecuada con html.
 
+Sigo repasando temario siempre con el compromiso de ir mejorando para llegar a una finalidad de una mejora continua real
+
 ## 7  REPASO ##
 
 - En este tema vamos a abordar apartados a mejorar en la programación
